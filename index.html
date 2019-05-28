@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="application-name" content="Actividad 26">
+    <meta name="description" content="Estancia en CONALEP">
+    <meta name="keywords" content="Jesús, LGZús, Estancia, Conalep">
+    <meta name="author" content="JGG, lgzus01@protonmail.com">
+    <meta name="copyright" content="CONALEP 153">
+	<title>Numeros multiplos</title>
+</head>
+<body>
+	<script>
+        var numerito = Number(prompt("Escribe hasta que número quieres RANGO DEL 1-500: "));
+        
+        if (numerito>0){
+            if (numerito<=500) {
+                //IMPRIMOS UNA LÍNEA HORIZONTAL   
+            document.write("<hr>");
+            //DECLARAMOS LAS VARIABLES
+            var i;
+            var j = numerito;
+            var rep = 0;
+            //BUCLE DESDE 1 HASTA j
+            for (i = 1; i <= j; i++) {
+                //IMPRIMIMOS EL NÚMERO i
+                document.write(i);
+                //SI EL RESTO DE DIVIDIR i/4 ES IGUAL A 0
+                if (i % 4 == 0) {
+                    document.write(" (Multiplo de 4)");
+                }
+                //SI EL RESTO DE DIVIDIR i/9 ES IGUAL A 0
+                if (i % 9 == 0) {
+                    document.write(" (Multiplo de 9)");
+                }
+                //IMPRIMIMOS UN SALTO DE LÍNEA
+                document.write("<br>");
+                //SI ES MÚLTIPLO DE 5 IMPRIMIMOS UNA LÍNEA HORIZONTAL
+                if (i % 5 == 0) {
+                    document.write("<hr>");
+                }
+            }
+            }else{
+                alert("Introduce un número válido del rango 1-500");
+            }
+        }else{
+                alert("Introduce un número válido del rango 1-500");
+        }
+	</script>
+</body>
+</html>
